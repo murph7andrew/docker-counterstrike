@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  counterstrike-server:
+    build: ./
+    container_name: counterstrike-server
+    hostname: counterstrike-server
+    image: counterstrike-server:latest
+    volumes: 
+      - ./counterstrike-server/steamcmd:/home/admin:rw
+  
